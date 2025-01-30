@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSploit Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/originals/fe/aa/f3/feaaf31962a1dfe72b419080229169a3.jpg">
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+        <nav>
+            <ul>
+                
+
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Company</a></li>
+                <div class="login-container">
+                    <h2>Login</h2>
+                    <form action="login.php" method="POST">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="file-upload-container">
+            <label for="file-upload" class="upload-btn">Upload File</label>
+            <input type="file" id="file-upload" style="display: none;" onchange="scanFile(event)">
+        </div>
+        
+        <section class="hero">
+            <h1>Cloud Security Posture Management</h1>
+            <p>Real-Time CSPM for uncovering hidden risks in your cloud infrastructure</p>
+            <img src="https://virteva.com/wp-content/uploads/2022/08/cloud-best-practices.jpg" alt="Cloud Security" />
+        </section>
+    </main>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <footer>
+        <p>&copy; 2025 CloudSploit Clone</p>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
